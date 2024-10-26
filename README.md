@@ -1,24 +1,24 @@
 # Rule-Engine-with-AST
-The application’s objective is to determine user eligibility based on dynamic rules that involve attributes like age, department, income, spend, etc. Using AST, the system can represent, combine, and modify rules efficiently.
+The application’s objective is to determine user eligibility based on dynamic rules that involve attributes 
+like age, department, income, spend. Using AST, the system can represent, combine, and modify rules efficiently.
 
 Setup Instructions
-Backend Setup:
 
+Backend Setup:
 Install Java and Spring Boot.
 Clone the repository and navigate to the backend directory.
 Update application properties with MySQL connection details.
 Run the application with mvn spring-boot:run.
+
 Database Setup:
-
 Set up a MySQL database and create tables as per the schema.
-Load sample data as described.
-Frontend Setup:
 
+Frontend Setup:
 Install Angular CLI.
 Navigate to the frontend directory and run npm install.
 Start the Angular application with ng serve.
-Testing:
 
+Testing:
 Use Postman or an API client to test endpoints.
 Verify UI displays the eligibility results accurately.
 
