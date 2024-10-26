@@ -1,0 +1,22 @@
+<!-- src/app/rule-engine.component.html -->
+
+<div>
+    <h2>Create Rule</h2>
+    <input [(ngModel)]="ruleString" placeholder="Enter rule string" />
+    <button #createRuleButton (click)="createRule()">Create Rule</button>
+
+  
+    <h2>Combine Rules (comma-separated IDs)</h2>
+    <input [(ngModel)]="ruleIds" placeholder="Enter rule IDs" />
+    <button (click)="combineRules()">Combine Rules</button>
+  
+    <h2>Evaluate Rule (Mega Rule ID)</h2>
+    <input type="number" [(ngModel)]="megaRuleId" placeholder="Enter Mega Rule ID" />
+    <textarea [(ngModel)]="dataJson" placeholder="Enter data (JSON)"></textarea>
+    <button (click)="evaluateRule()">Evaluate Rule</button>
+  
+   
+    <h2>Output</h2>
+    <div *ngFor="let line of output">{{ line }}</div>
+  </div>
+  
